@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif,Arial;
+}
+
+:root{
+    --colorPrincipal:rgb(255, 180, 68);
+    --colorSecundario:#fff998;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/*Evitamos problemas con las imágenes*/
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.imgLogo{
+    width: 5em;
+    border-radius: 50%;
+}
+
+.mainArticle{
+    color: #fff;
+    padding: 2em;
+    max-width: 85%;
+    margin: auto;
+}
+.mainTitle{
+    background: var(--colorPrincipal);
+    border-radius: 2em;
+    box-shadow: 0em 0em .2em rgba(45, 19, 19, 0.493);
+    color: #fff;
+    padding: 1em;
+    margin: 0 0 1em 0;
+}
+.mainParagraph{
+    padding: 1em;
+    color: #000;
+    border-radius: .3em;
+    outline: .1em solid #3535353c;
+    background: #00000016;
+    
+}
+
+/* FOOTER */
+.footer{
+    padding-bottom: 2em;
+}
+.footerTitle{
+    color: #fff;
+    padding: 1em;
+}
+
+
+
+/*ESTILOS PÁGINA DE PRODUCTOS*/
+
+.carousel{
+    max-width: 80%;
+    margin: auto;
+    padding: 2em 0;
+}
+.sectionAcordion{
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+}
+.acordionTitle{
+    background: var(--colorPrincipal);
+    border-radius: 2em;
+    box-shadow: 0em 0em .2em rgba(45, 19, 19, 0.493);
+    color: #fff;
+    padding: 1em;
+    margin: 0 0 1em 0;
+}
+.mainProductos{
+    max-width: 85%;
+}
+    
+/* RESPONSIVE  */
+
+@media (max-width:1023px) {
+    .mainArticle{
+        max-width: 100%;
+    }
+
+    .mainProductos{
+        max-width: 100%;
+    }
+}
+
